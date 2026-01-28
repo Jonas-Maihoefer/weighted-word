@@ -1,0 +1,18 @@
+[project]
+name = "weighted-word-backend"
+version = "0.1.0"
+description = "Biblical Topic Distribution API"
+authors = [
+    {name = "Jonas Maihöfer"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "sqlalchemy",
+    "asyncpg",
+    "alembic",
+    "pgvector"
+]
+requires-python = ">=3.10"
