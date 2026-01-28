@@ -26,12 +26,20 @@ The now obtained topic distribution can then be compared to the topic distributi
 ## How to dev
 
 ### Running the Backend
-Development (hot reload)
+#### Development (hot reload)
+
+Mac/Linux/WSL
 ```
 uvicorn app.main:app --reload
 ```
 
-Production
+Windows
+```
+.\dev.bat
+```
+(or double click on dev.bat)
+
+#### Production
 ```
 gunicorn -k uvicorn.workers.UvicornWorker app.main:app
 ```
